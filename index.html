@@ -155,14 +155,57 @@
         </div>   
     </div>
 
-    <div class="multimedia-item">
-                    <h3>Video Complementario</h3>
-                    <iframe src="https://youtu.be/H-5PWCsx20E?si=mI28KwRtGSnILgAH" frameborder="0" allowfullscreen></iframe>
+<div class="multimedia">
+    <h2>Contenido Multimedia</h2>
+    <div class="columnas">
+        <!-- Columna del video -->
+        <div class="columna">
+            <h3>Video Promocional del Evento</h3>
+            <iframe 
+                src="https://www.youtube.com/embed/077BgT3h6As" 
+                frameborder="0" 
+                allowfullscreen 
+                width="100%" 
+                height="315">
+            </iframe>
+        </div>
 
-        <h2>Audio Introductorio</h2>
-        <audio controls>
-            <source src="audio.mp3" type="audio/mp3">        
-        </audio>
+        <!-- Columna del audio -->
+        <div class="columna">
+            <h3>Audio Introductorio</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
     </div>
-</body>
-</html>
+</div>
+
+<style>
+    /* Contenedor multimedia */
+    .multimedia {
+        margin-top: 30px;
+    }
+
+    /* Diseño de columnas */
+    .multimedia .columnas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    /* Estilo para cada columna */
+    .multimedia .columna {
+        flex: 1;
+        min-width: 280px; /* Asegura que las columnas no se vuelvan demasiado pequeñas */
+        max-width: 48%;
+    }
+
+    /* Ajustar audio y video */
+    .multimedia .columna iframe,
+    .multimedia .columna audio {
+        width: 100%;
+    }
+</style>
+
