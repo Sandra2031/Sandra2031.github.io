@@ -1,0 +1,172 @@
+<Codigo con elementos visuales>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Simple</title>
+    <style>
+        /* Estilo general del cuerpo */
+        body {
+            background-color: #2d3250;
+            margin: 0;
+            font-family: 'Tenorite', sans-serif;
+            color: white;
+        }
+
+        /* Título centrado y con color específico */
+        h1 {
+            color: #f6b17a;
+            text-align: center;
+            font-size: 36px;
+            margin-top: 20px;
+        }
+
+        /* Fecha y hora centradas */
+        p.fecha-hora {
+            text-align: center;
+            font-size: 18px;
+            color: white;
+        }
+
+        /* Imagen centrada */
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 50%;
+            max-width: 400px;
+        }
+
+        /* Texto general justificado */
+        p {
+            text-align: justify;
+            color: white;
+        }
+
+        /* Estilo de columnas */
+        .columnas {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* Columnas separadas */
+        .columna {
+            width: 48%;
+        }
+
+        /* Tabla de detalles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        /* Encabezado de la tabla en el mismo color del título */
+        th {
+            background-color: #f6b17a;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Celdas de la tabla */
+        td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: left;
+            color: white;
+            background-color: #2d3250;
+        }
+
+        /* Enlace de ubicación */
+        #ubicacion-link a {
+            color: #f6b17a;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        #ubicacion-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Botón de compra de boletos */
+        a.button {
+            display: inline-block;
+            padding: 20px 30px;
+            background-color: #f6b17a;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 10px;
+            margin: 20px auto;
+            display: block;
+            width: 200px;
+            transition: background-color 0.3s;
+        }
+
+        /* Efecto hover en el botón */
+        a.button:hover {
+            background-color: #e69f5f;
+        }
+
+        /* Contenedor multimedia */
+        .multimedia {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .multimedia video,
+        .multimedia audio {
+            max-width: 90%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>El Lago de los Cisnes</h1>
+    <p class="fecha-hora">noviembre 9 / 8:30 pm - 10:30 pm</p>
+    <img src="https://prestadores.visitasanluispotosi.com/wp-content/uploads/2024/09/091124-lagodeloscisnes.webp" alt="Descripción de la imagen">
+    <h2>Descubre la Magia del Lago de los Cisnes: Un Sueño en Dos Actos</h2>
+    <p>Prepárate para dejarte llevar por la majestuosidad del ballet con El Lago de los Cisnes, una de las obras más icónicas de la danza clásica. En esta producción de ensueño, la tragedia y el romance se entrelazan en una historia que ha cautivado al mundo durante generaciones.</p>
+    <p>Con la coreografía original de Marius Petipa y Lev Ivanov, el escenario se transforma en un universo donde los cisnes danzan con una gracia etérea, liderados por las talentosas Liudmila Titova y Ksenia Pukhlovskaya en el papel dual de Odette-Odile, la mujer atrapada en un hechizo que solo puede romperse con el poder del amor verdadero. Junto a ellas, los príncipes Sergei Skvortsov e Iván Zvyagintsev dan vida al noble Príncipe Sigfrido, cuya declaración de amor marcará el destino de la historia.</p>
+    <p>Durante 120 minutos y dividida en dos actos, esta obra maestra te llevará a un viaje donde el bien triunfa sobre el mal. Desde el primer compás, te envolverás en un ambiente de lujo: trajes magníficos, paisajes escénicos que parecen salidos de un cuento de hadas, y un cuerpo de baile que combina técnica y pasión de forma exquisita. Cada movimiento está cargado de precisión, cada paso es pura poesía visual, logrando que te sientas parte de este relato épico.</p>
+    <p>El ballet no es solo movimiento, es arte en su máxima expresión. El Lago de los Cisnes te invita a experimentar esa magia donde la música, la coreografía y la emoción se funden para crear un espectáculo que recordarás por siempre. ¡No te lo pierdas!</p>
+    <div class="columnas">
+        <div class="columna">
+            <h2>Detalles</h2>
+            <table>
+                <tr><th>Fecha</th><td>noviembre 9</td></tr>
+                <tr><th>Hora</th><td>8:30 pm - 10:30 pm</td></tr>
+                <tr><th>Categoría</th><td>Teatro</td></tr>
+                <tr><th>Etiquetas</th><td>Atemporal</td></tr>
+            </table>
+        </div>
+
+        <div class="columna">
+            <h2>Local</h2>
+            <p>Teatro de la Paz, Villerias, Centro Histórico, San Luis Potosí, S.L.P. 78000, México</p>
+            <div id="ubicacion-link">
+                <a href="https://maps.app.goo.gl/d5U6beN1FkDYk7XQ9" target="_blank">Ver ubicación en Google Maps</a>
+            </div>
+
+            <h2>Compra de boletos</h2>
+            <a href="https://www.superboletos.com/landing-evento/ChYviul1NMbNK0kwGPhK2A" class="button">Comprar boletos</a>
+        </div>   
+    </div>
+
+    <div class="multimedia">
+        <h2>Video Promocional del Evento</h2>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <h2>Audio de la mejor melodía</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">        
+        </audio>
+    </div>
+</body>
+</html>
