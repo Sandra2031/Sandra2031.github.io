@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
             color: #f6b17a;
             text-align: center;
             font-size: 36px;
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         /* Fecha y hora centradas */
@@ -31,7 +31,7 @@
         /* Imagen centrada */
         img {
             display: block;
-            margin: 20px auto;
+            margin: 10px auto;
             width: 50%;
             max-width: 400px;
         }
@@ -93,7 +93,7 @@
         /* Botón de compra de boletos */
         a.button {
             display: inline-block;
-            padding: 20px 30px;
+            padding: 15px 25px;
             background-color: #f6b17a;
             color: white;
             font-weight: bold;
@@ -115,7 +115,12 @@
         /* Contenedor multimedia */
         .multimedia {
             text-align: center;
-            margin-top: 30px;
+            margin: 30px auto;
+            padding: 10px;
+            border: 2px solid #f6b17a;
+            border-radius: 10px;
+            background-color: #393d5f;
+            max-width: 90%;
         }
 
         .multimedia video,
@@ -123,111 +128,128 @@
             max-width: 90%;
             margin-top: 20px;
         }
+
+        /* Cuadro de texto para la información del recital */
+        .info-recital {
+            border: 2px solid #f6b17a;
+            color: #f6b17a;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            text-align: center;
+            background: none;
+        }
+
+        .info-recital h2 {
+            color: #f6b17a;
+            margin-bottom: 10px;
+        }
+
+        .info-recital p {
+            margin: 0;
+            text-align: justify;
+        }
+
+        /* Márgenes generales para el contenido */
+        .contenido {
+            margin: 10px auto;
+            max-width: 1200px;
+            padding: 10px;
+        }
+
+        /* Diseño de columnas multimedia */
+        .multimedia .columnas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        /* Estilo para cada columna multimedia */
+        .multimedia .columna {
+            flex: 1;
+            min-width: 280px;
+            max-width: 48%;
+        }
+
+        /* Ajustar audio y video */
+        .multimedia .columna iframe,
+        .multimedia .columna audio {
+            width: 100%;
+        }
+
+        /* Sombra para elementos */
+        .sombra {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
     </style>
 </head>
 <body>
-    <h1>El Lago de los Cisnes</h1>
-    <p class="fecha-hora">noviembre 9 / 8:30 pm - 10:30 pm</p>
-    <img src="https://prestadores.visitasanluispotosi.com/wp-content/uploads/2024/09/091124-lagodeloscisnes.webp" alt="Descripción de la imagen">
-  <h2>Descubre la Magia del Lago de los Cisnes: Un Sueño en Dos Actos</h2>
-    <p>Prepárate para dejarte llevar por la majestuosidad del ballet con El Lago de los Cisnes, una de las obras más icónicas de la danza clásica. En esta producción de ensueño, la tragedia y el romance se entrelazan en una historia que ha cautivado al mundo durante generaciones.</p>
-    <p>Con la coreografía original de Marius Petipa y Lev Ivanov, el escenario se transforma en un universo donde los cisnes danzan con una gracia etérea, liderados por las talentosas Liudmila Titova y Ksenia Pukhlovskaya en el papel dual de Odette-Odile, la mujer atrapada en un hechizo que solo puede romperse con el poder del amor verdadero. Junto a ellas, los príncipes Sergei Skvortsov e Iván Zvyagintsev dan vida al noble Príncipe Sigfrido, cuya declaración de amor marcará el destino de la historia.</p>
-    <p>Durante 120 minutos y dividida en dos actos, esta obra maestra te llevará a un viaje donde el bien triunfa sobre el mal. Desde el primer compás, te envolverás en un ambiente de lujo: trajes magníficos, paisajes escénicos que parecen salidos de un cuento de hadas, y un cuerpo de baile que combina técnica y pasión de forma exquisita. Cada movimiento está cargado de precisión, cada paso es pura poesía visual, logrando que te sientas parte de este relato épico.</p>
-    <p>El ballet no es solo movimiento, es arte en su máxima expresión. El Lago de los Cisnes te invita a experimentar esa magia donde la música, la coreografía y la emoción se funden para crear un espectáculo que recordarás por siempre. ¡No te lo pierdas!</p>
-    <div class="columnas">
-        <div class="columna">
-            <h2>Detalles</h2>
-            <table>
-                <tr><th>Fecha</th><td>noviembre 9</td></tr>
-                <tr><th>Hora</th><td>8:30 pm - 10:30 pm</td></tr>
-                <tr><th>Categoría</th><td>Teatro</td></tr>
-                <tr><th>Etiquetas</th><td>Atemporal</td></tr>
-            </table>
+    <div class="contenido">
+        <h1>El Lago de los Cisnes</h1>
+        <p class="fecha-hora">noviembre 9 / 8:30 pm - 10:30 pm</p>
+        <img src="https://prestadores.visitasanluispotosi.com/wp-content/uploads/2024/09/091124-lagodeloscisnes.webp" alt="Descripción de la imagen">
+        
+        <div class="info-recital sombra">
+                 <h2>Descubre la Magia del Lago de los Cisnes: Un Sueño en Dos Actos</h2>
+              <p>Prepárate para dejarte llevar por la majestuosidad del ballet con El Lago de los Cisnes, una de las obras más icónicas de la danza clásica. En esta producción de ensueño,        la tragedia y el romance se entrelazan en una historia que ha cautivado al mundo durante generaciones.</p>
+              <p>Con la coreografía original de Marius Petipa y Lev Ivanov, el escenario se transforma en un universo donde los cisnes danzan con una gracia etérea, liderados por las talentosas Liudmila Titova y Ksenia Pukhlovskaya en el papel dual de Odette-Odile, la mujer atrapada en un hechizo que solo puede romperse con el poder del amor verdadero. Junto a ellas, los príncipes Sergei Skvortsov e Iván Zvyagintsev dan vida al noble Príncipe Sigfrido, cuya declaración de amor marcará el destino de la historia.</p>
+              <p>Durante 120 minutos y dividida en dos actos, esta obra maestra te llevará a un viaje donde el bien triunfa sobre el mal. Desde el primer compás, te envolverás en un ambiente de lujo: trajes magníficos, paisajes escénicos que parecen salidos de un cuento de hadas, y un cuerpo de baile que combina técnica y pasión de forma exquisita. Cada movimiento está cargado de precisión, cada paso es pura poesía visual, logrando que te sientas parte de este relato épico.</p>
+             <p>El ballet no es solo movimiento, es arte en su máxima expresión. El Lago de los Cisnes te invita a experimentar esa magia donde la música, la coreografía y la emoción se funden para crear un espectáculo que recordarás por siempre. ¡No te lo pierdas!</p>
         </div>
 
-        <div class="columna">
-            <h2>Local</h2>
-            <p>Teatro de la Paz, Villerias, Centro Histórico, San Luis Potosí, S.L.P. 78000, México</p>
-            <div id="ubicacion-link">
-                <a href="https://maps.app.goo.gl/d5U6beN1FkDYk7XQ9" target="_blank">Ver ubicación en Google Maps</a>
+        <div class="columnas">
+            <div class="columna">
+                <h2>Detalles</h2>
+                <table>
+                    <tr><th>Fecha</th><td>noviembre 9</td></tr>
+                    <tr><th>Hora</th><td>8:30 pm - 10:30 pm</td></tr>
+                    <tr><th>Categoría</th><td>Teatro</td></tr>
+                    <tr><th>Etiquetas</th><td>Atemporal</td></tr>
+                </table>
+                <div>
+                    <img src="https://cdn.arema.dev/live/mapas/evento/8061.jpg" alt="Ballet Swan Lake" style="display:block; margin:10px auto; width:70%; max-width:350px; border-radius:10px;">
+                </div>
             </div>
 
- <!-- Imagen después del enlace de ubicación -->
-        <div class="imagen-local">
-            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/54/37/cb/teatro-de-la-paz.jpg?w=1200&h=1200&s=1" alt="Imagen del Teatro de la Paz">
+            <div class="columna">
+                <h2>Local</h2>
+                <p>Teatro de la Paz, Villerias, Centro Histórico, San Luis Potosí, S.L.P. 78000, México</p>
+                <div id="ubicacion-link">
+                    <a href="https://maps.app.goo.gl/d5U6beN1FkDYk7XQ9" target="_blank">Ver ubicación en Google Maps</a>
+                </div>
+                <div class="imagen-local sombra">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/54/37/cb/teatro-de-la-paz.jpg?w=1200&h=1200&s=1" alt="Imagen del Teatro de la Paz" style="display:block; margin:10px auto; width:70%; max-width:350px; border-radius:10px;">
+
+                </div>
+                <h2>Compra de boletos</h2>
+                <a href="https://www.superboletos.com/landing-evento/ChYviul1NMbNK0kwGPhK2A" class="button">Comprar boletos</a>
+            </div>   
         </div>
+    </div>
 
-        <h2>Compra de boletos</h2>
-        <a href="https://www.superboletos.com/landing-evento/ChYviul1NMbNK0kwGPhK2A" class="button">Comprar boletos</a>
-    </div>   
-</div>
+    <div class="multimedia sombra">
+        <h2>Contenido Multimedia</h2>
+        <div class="columnas">
+            <div class="columna">
+                <h3>Video Promocional-Swan Lake – Act II pas de deux</h3>
+                <iframe 
+                    src="https://www.youtube.com/embed/077BgT3h6As" 
+                    frameborder="0" 
+                    allowfullscreen 
+                    width="100%" 
+                    height="315">
+                </iframe>
+            </div>
 
-<style>
-    /* Estilo de la imagen del local */
-    .imagen-local {
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    .imagen-local img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px; /* Bordes redondeados para mejorar el diseño */
-        border: 2px solid #f6b17a; /* Borde del mismo color que el tema */
-    }
-</style>
-
-<div class="multimedia">
-    <h2>Contenido Multimedia</h2>
-    <div class="columnas">
-        <!-- Columna del video -->
-        <div class="columna">
-            <h3>Video Promocional-Swan Lake – Act II pas de deux</h3>
-            <iframe 
-                src="https://www.youtube.com/embed/077BgT3h6As" 
-                frameborder="0" 
-                allowfullscreen 
-                width="100%" 
-                height="315">
-            </iframe>
-        </div>
-
-        <!-- Columna del audio -->
-        <div class="columna">
-            <h3>Audio Melodía Principal del Recital</h3>
-            <audio controls>
+            <div class="columna">
+                <h3>Audio Melodía Principal del Recital</h3>
+                <audio controls>
                 <source src="audio.mp3" type="audio/mp3">
                 Tu navegador no soporta el elemento de audio.
             </audio>
         </div>
     </div>
 </div>
-
-<style>
-    /* Contenedor multimedia */
-    .multimedia {
-        margin-top: 30px;
-    }
-
-    /* Diseño de columnas */
-    .multimedia .columnas {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: space-between;
-    }
-
-    /* Estilo para cada columna */
-    .multimedia .columna {
-        flex: 1;
-        min-width: 280px; /* Asegura que las columnas no se vuelvan demasiado pequeñas */
-        max-width: 48%;
-    }
-
-    /* Ajustar audio y video */
-    .multimedia .columna iframe,
-    .multimedia .columna audio {
-        width: 100%;
-    }
-</style>
 
